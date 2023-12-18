@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Usuarios</title>
+</head>
+<body>
+    <h1>Registro de Usuarios</h1>
+    <form action="/registrar-usuario" method="post"> <!-- Ajusta la acción según la ruta de tu controlador -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="cedula">Cédula:</label>
+        <input type="text" id="cedula" name="cedula" required>
+        
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+        
+        <button type="submit">Registrar</button>
+    </form>
+</body>
+</html>
